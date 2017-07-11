@@ -7,16 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AuFaInputComponent implements OnInit {
 
-  @Input()
-  icon: string;
-  constructor() { }
+  @Input() icon: string;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
   get classes() {
     const cssClasses = {
-      'fa': true
     };
     if (this.icon) {
       cssClasses['fa-' + this.icon] = true;
